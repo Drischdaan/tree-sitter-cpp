@@ -1412,6 +1412,16 @@
     "type": "class_specifier",
     "named": true,
     "fields": {
+      "api_macro": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "api_macro_identifier",
+            "named": true
+          }
+        ]
+      },
       "body": {
         "multiple": false,
         "required": false,
@@ -2339,6 +2349,16 @@
     "type": "enum_specifier",
     "named": true,
     "fields": {
+      "api_macro": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "api_macro_identifier",
+            "named": true
+          }
+        ]
+      },
       "base": {
         "multiple": false,
         "required": false,
@@ -6250,6 +6270,16 @@
     "type": "struct_specifier",
     "named": true,
     "fields": {
+      "api_macro": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "api_macro_identifier",
+            "named": true
+          }
+        ]
+      },
       "body": {
         "multiple": false,
         "required": false,
@@ -7159,6 +7189,16 @@
     "type": "union_specifier",
     "named": true,
     "fields": {
+      "api_macro": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "api_macro_identifier",
+            "named": true
+          }
+        ]
+      },
       "body": {
         "multiple": false,
         "required": false,
@@ -7855,6 +7895,10 @@
   {
     "type": "and_eq",
     "named": false
+  },
+  {
+    "type": "api_macro_identifier",
+    "named": true
   },
   {
     "type": "asm",

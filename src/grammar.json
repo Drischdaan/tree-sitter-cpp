@@ -5336,6 +5336,22 @@
             "type": "CHOICE",
             "members": [
               {
+                "type": "FIELD",
+                "name": "api_macro",
+                "content": {
+                  "type": "SYMBOL",
+                  "name": "api_macro_identifier"
+                }
+              },
+              {
+                "type": "BLANK"
+              }
+            ]
+          },
+          {
+            "type": "CHOICE",
+            "members": [
+              {
                 "type": "SEQ",
                 "members": [
                   {
@@ -11147,6 +11163,17 @@
         }
       ]
     },
+    "api_macro_identifier": {
+      "type": "TOKEN",
+      "content": {
+        "type": "PREC",
+        "value": 2,
+        "content": {
+          "type": "PATTERN",
+          "value": "[A-Z][A-Z0-9_]*_API"
+        }
+      }
+    },
     "_class_declaration": {
       "type": "SEQ",
       "members": [
@@ -11165,6 +11192,22 @@
               }
             ]
           }
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "FIELD",
+              "name": "api_macro",
+              "content": {
+                "type": "SYMBOL",
+                "name": "api_macro_identifier"
+              }
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
         },
         {
           "type": "CHOICE",
